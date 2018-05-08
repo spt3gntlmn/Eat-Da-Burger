@@ -6,9 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": "4.1.1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/spt3gntlmn/Eat-Da-Burger.git"
