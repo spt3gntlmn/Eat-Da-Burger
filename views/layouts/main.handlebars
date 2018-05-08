@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Eat Da Burger</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  <div id="background">
+    <div class="container">
+      <br>
+      <br>
+      <div id="tall"></div>
+
+      {{!-- PAGE TITLE --}}
+      <div class="background">
+        <div class="transbox">
+
+
+          <center>
+            <h1 class="blue_font opacity">Eat Da Burger!
+            </h1>
+            {{!-- Page Title CENTER --}}
+          </center>
+
+
+          <br>
+          <br> {{!-- Burger Input --}}
+          <form action="burger/create" method="POST">
+
+            <div class="row">
+              {{!-- centering div --}}
+              <div class="col-md-3"></div>
+
+              {{!-- Burger Input Textarea --}}
+              <div class="form-group col-md-6">
+                <center>
+                  <label for="new_burger" class="blue_font opacity">Request a new burger & place your order!</label>
+                </center>
+                <textarea class="form-control" name="burger_name" id="new_burger" cols="8" rows="1.5"></textarea>
+              </div>
+
+              <div class="col-md-3"></div>
+
+              {{!-- class row div ending --}}
+            </div>
+
+            {{!-- Submit Button --}}
+            <center>
+              <button id="submit-button" type="submit" class="btn btn-danger">Place Order</button>
+            </center>
+
+          </form>
+          <br>
+        </div>
+
+        <br>
+        <!-- Burger content: index.handlebars -->
+        {{{body}}}
+
+
+        <!-- Page's last DIV -->
+      </div>
+    </div>
+
+    {{!-- jQuery CDN --}}
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</body>
+
+</html>

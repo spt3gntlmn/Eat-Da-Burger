@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eat Da Burger</title>
+  <link rel="icon" href="/assets/img/Krabby_Patty.png">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/burger_style.css">
+</head>
+
+<body>
+  <div class="container">
+    <br>
+
+    <center>
+      <div class="row">
+        <img src="/assets/img/Krabby_Patty.png" alt="My burger's image">
+      </div>
+    </center>
+
+    {{!-- PAGE TITLE --}}
+    <center>
+      <h1 class="red_font">Eat Da Burger!
+        <small class="tiny_text">Best with a side of audio.</small>
+      </h1>
+      {{!-- Page Title CENTER --}}
+    </center>
+
+    <br> {{!-- Burger content: index.handlebars --}} {{{body}}}
+
+    <br>
+    <br> {{!-- Burger Input --}}
+    <form action="burger/create" method="POST">
+
+      <div class="row">
+        {{!-- centering div --}}
+        <div class="col-md-3"></div>
+
+        {{!-- Burger Input Textarea --}}
+        <div class="form-group col-md-6">
+          <center>
+            <label for="new_burger" class="red_font">Request a new burger & place your order!</label>
+          </center>
+          <textarea class="form-control" name="burger_name" id="new_burger" cols="8" rows="4"></textarea>
+        </div>
+
+        <div class="col-md-3"></div>
+
+        {{!-- class row div ending --}}
+      </div>
+
+      {{!-- Submit Button --}}
+      <center>
+        <button id="submit-button" type="submit" class="btn btn-danger">Place Order</button>
+      </center>
+
+    </form>
+
+    <br>
+
+    <!-- Page's last DIV -->
+  </div>
+
+  {{!-- jQuery CDN --}}
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous"> {{!-- Local JavaScript --}}
+  <script src="/assets/javascript/burger_sounds.js"></script>
+
+</body>
+
+</html>

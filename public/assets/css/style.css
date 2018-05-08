@@ -1,0 +1,51 @@
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/burger-wall.jpg');
+    background-repeat: round;
+    background-attachment: fixed;
+    background-size: 40%;
+}
+
+.opacity {
+  background-color: azure;
+  width: 400px;
+  height: 20px;
+}
+
+.blue_font {
+  color: blue;
+}
+
+.tiny_text {
+  font-size: 11px;
+  color: #5da82f;
+}
+
+div.background {
+    border: 10px solid orange;
+}
+
+div.transbox {
+    width: 420px;
+    margin: auto;
+    background-color: #ffffff;
+    border: 2px solid black;
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+.red_font {
+  color: #bc001f;
+}
+
+#tall {
+  height: 200px;
+}

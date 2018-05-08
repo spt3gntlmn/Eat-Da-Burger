@@ -1,0 +1,35 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "Homework 12",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "4.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spt3gntlmn/Eat-Da-Burger.git"
+  },
+  "keywords": [
+    "burger",
+    "mysql",
+    "handlebars"
+  ],
+  "author": "Samuel P. Taylor, III",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spt3gntlmn/Eat-Da-Burger/issues"
+  },
+  "homepage": "https://github.com/spt3gntlmn/Eat-Da-Burger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0",
+    "sequelize": "^4.37.6"
+  }
+}
